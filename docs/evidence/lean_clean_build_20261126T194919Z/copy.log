@@ -1,0 +1,2 @@
+$ rm -rf /work/formal_cprs && cp -r /src/formal_cprs /work/formal_cprs && cp lake-manifest.json /work/manifest.committed.json
+(exit 0, 0.0 s)

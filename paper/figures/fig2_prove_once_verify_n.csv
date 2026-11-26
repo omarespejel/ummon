@@ -1,0 +1,7 @@
+system,accounting,prover_seconds,verify_seconds,line,prover_source,verify_source
+Ummon,as run: registration included (our runner registers on every run),4574.538,0.046634771,yes,"release candidate 2 run ledger, first proof, prover wall 4,574.538 s (claims ledger row 335)","mains-power laptop session 2026-11-25 23:13, first proof, median of 30 whole processes, one thread"
+Ummon,without registration (it reads no prompt and could run once per model),3872.879,0.046634771,no,"4,574.538 s less registration 701.659 s (claims ledger row 427)","as above"
+FlashProve,per request: one-time weight commitment excluded,63.4,12.1235180215,yes,"16-token request k16z, start-up included (claims ledger row 638; K16Z)","mains-power laptop session 2026-11-25 23:13, k16z, median of 30 whole processes, its one-thread setting (-j 1)"
+FlashProve,request with the same run's commitment (1942.0 s),2005.4,12.1235180215,no,"1,942.0 + 63.4 s, both from the k16z run (K16Z)","as above"
+FlashProve,request with its shortest measured commitment (1911.0 s),1974.4,12.1235180215,no,"1,911.0 s (another run) + 63.4 s (k16z) (claims ledger row 194)","as above"
+FlashProve,request with its longest measured commitment (3155.9 s),3219.3,12.1235180215,no,"3,155.9 s (another run) + 63.4 s (k16z) (claims ledger row 194)","as above"

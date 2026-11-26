@@ -1,0 +1,6 @@
+$ du -sh .lake ~/.cache/mathlib 2>/dev/null; df -h /work
+(exit 0, 1.0 s)
+8.4G	.lake
+433M	/root/.cache/mathlib
+Filesystem      Size  Used Avail Use% Mounted on
+none            512G   13G  500G   3% /

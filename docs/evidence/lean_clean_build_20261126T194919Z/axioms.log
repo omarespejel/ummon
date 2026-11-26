@@ -1,0 +1,11 @@
+$ lake env lean /src/lean_print_axioms.lean
+(exit 0, 6.7 s)
+'Cprs.Chain.chain_soundness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.Chain.chain_soundness_moore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.PhaseBInst.soundness_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.corrAgree_of_arklib' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProximityGap.RS_jointAgreement_of_goodCoeffs_card_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.Packing.conjugate_identity_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.sumcheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.Toy.nonvacuity_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.Toy.nonvacuity_true' depends on axioms: [propext, Classical.choice, Quot.sound]

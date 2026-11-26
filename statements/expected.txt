@@ -1,0 +1,5 @@
+# proof            receipts  layers  receipt_bytes  final_chain
+proof1_prose       3         48      4643682        48:fb098795e93429814cfbe459020fa302339bf988dd1070ffd1d3b6a2cae4129f
+proof2_python      3         48      4642210        48:f54092755756e5b14fd769ced72dcefbb87ddcbeaa07ecfbc06090254819943b
+proof3_dialogue    3         48      4654514        48:fb90be339cdcfe0658ba88de8338a77d757503d42158660bc1e6f33c8ad92ae1
+proof4_french      3         48      4621618        48:4128921bdd66680ef5db8e727cf780f4a301f26751ed4e415d5c1b412f857889

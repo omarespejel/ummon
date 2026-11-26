@@ -1,0 +1,727 @@
+$ bash scripts/check.sh
+(exit 0, 194.9 s)
+== 1/4 forbidden tokens in CprsFormal/*.lean
+ok
+== 2/4 lake build
+⚠ [8923/8930] Built CprsFormal.Basic (6.6s)
+warning: CprsFormal/Basic.lean:30:0: automatically included section variable(s) unused in theorem `Cprs.sqrtK_sq`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [8932/9029] Built ToMathlib.Lint.LegacyProbability (4.5s)
+ℹ [8936/9036] Built CprsFormal.Commit (12s)
+info: CprsFormal/Commit.lean:37:0: 'Cprs.lemmaC' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8937/9036] Built Cslib.Foundations.Lint.Basic (4.6s)
+ℹ [8940/9093] Built CprsFormal.Fold (12s)
+info: CprsFormal/Fold.lean:134:0: 'Cprs.word_eq_even_add_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Fold.lean:135:0: 'Cprs.word_neg_eq_even_sub_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Fold.lean:136:0: 'Cprs.SqLayer.card_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Fold.lean:137:0: 'Cprs.SqLayer.sum_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8941/9093] Built CprsFormal.WeightedAgreement (12s)
+warning: CprsFormal/WeightedAgreement.lean:19:0: automatically included section variable(s) unused in theorem `Cprs.lemmaW'`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: CprsFormal/WeightedAgreement.lean:61:0: 'Cprs.lemmaW'' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8947/9093] Built Cslib.Tactic.GrindAttrs (5.7s)
+✔ [8948/9093] Built ToMathlib.Logic.Basic (6.3s)
+✔ [8949/9093] Built ToMathlib.Control.Functor.Prod (6.4s)
+✔ [8959/9093] Built PolyFun.Control.Monad.Hom (7.3s)
+✔ [8960/9093] Built ToMathlib.Data.Set.Functor (7.1s)
+✔ [8963/9093] Built PolyFun.Control.Monad.Algebra (7.7s)
+✔ [8964/9093] Built ToMathlib.Algebra.BigOperators.List (8.2s)
+✔ [8965/9093] Built ToMathlib.Data.Fin.Basic (8.4s)
+✔ [8966/9093] Built ToMathlib.Data.BitVec (8.4s)
+✔ [8967/9093] Built ToMathlib.Control.Monad.Fold (8.4s)
+✔ [8968/9093] Built ToMathlib.Data.List.Count (8.7s)
+✔ [8969/9093] Built ToMathlib.Data.Vector.Induction (8.6s)
+✔ [8970/9093] Built PolyFun.PFunctor.Obj (8.6s)
+✔ [8971/9093] Built ToMathlib.MeasureTheory.DiscreteInstances (8.3s)
+⚠ [8972/9093] Built ArkLib.Data.Fin.Basic (9.1s)
+warning: vendor/ArkLib/Data/Fin/Basic.lean:327:4: declaration uses `sorry`
+✔ [8973/9093] Built ToMathlib.Algebra.BigOperators.Finset (9.1s)
+✔ [8974/9093] Built ToMathlib.Data.FinEnum (8.6s)
+✔ [8975/9093] Built ToMathlib.MeasureTheory.MeasurableSpace.Option (8.6s)
+✔ [8976/9093] Built ToMathlib.Topology.Algebra.InfiniteSum.Option (9.1s)
+✔ [8977/9093] Built ToMathlib.MeasureTheory.Measure.Prop (8.9s)
+✔ [8978/9093] Built ToMathlib.Probability.UniformOn (9.0s)
+✔ [8979/9093] Built ToMathlib.MeasureTheory.Measure.IndependentDraws (8.0s)
+✔ [8980/9093] Built ToMathlib.MeasureTheory.Measure.GiryMonad (8.0s)
+✔ [8981/9093] Built ToMathlib.MeasureTheory.Integral.Bounds (9.1s)
+✔ [8982/9093] Built ToMathlib.MeasureTheory.Measure.Subprobability (9.3s)
+✔ [8983/9093] Built ArkLib.Data.CodingTheory.Prelims (11s)
+⚠ [8984/9093] Built CprsFormal.Mle (18s)
+warning: CprsFormal/Mle.lean:13:0: automatically included section variable(s) unused in theorem `Cprs.mleAux_add`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/Mle.lean:23:0: automatically included section variable(s) unused in theorem `Cprs.mleAux_const_mul`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/Mle.lean:64:0: automatically included section variable(s) unused in theorem `Cprs.mle_lift`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: CprsFormal/Mle.lean:78:0: 'Cprs.mle_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8985/9093] Built ArkLib.Data.CodingTheory.BerlekampWelch.Sorries (7.2s)
+✔ [8986/9093] Built Cslib.Init (6.4s)
+✔ [8987/9093] Built ArkLib.ToMathlib.Polynomial.DegreeLT (7.8s)
+✔ [8988/9093] Built ArkLib.Data.MvPolynomial.Degrees (8.2s)
+✔ [8989/9093] Built PolyFun.Control.Monad.Support (5.6s)
+✔ [8990/9093] Built ToMathlib.Control.OptionT (5.8s)
+✔ [8991/9093] Built ArkLib.Data.Polynomial.ResultantDegree (8.2s)
+✔ [8992/9093] Built ArkLib.Data.Fin.Lift (5.0s)
+ℹ [8993/9093] Built ArkLib.Data.Polynomial.Bivariate (7.7s)
+info: vendor/ArkLib/Data/Polynomial/Bivariate.lean:55:17: Try these:
+  [apply] [grind =] for pattern: [@Finset.Nonempty #3 (@Finsupp.support _ #2 #1 #0)]
+  [apply] [grind! .] for pattern: [@Finsupp.support #3 #2 #1 #0]
+info: vendor/ArkLib/Data/Polynomial/Bivariate.lean:55:17: Try these:
+  [apply] [grind
+    .] for pattern: [@LE.le `[ℕ] `[instLENat] (@natDegree #3 #2 (@HMul.hMul (Polynomial _ _) (Polynomial _ _) (Polynomial _ _) _ #1 #0)) (@HAdd.hAdd `[ℕ] `[ℕ] `[ℕ] `[instHAdd] (@natDegree _ _ #1) (@natDegree _ _ #0))]
+  [apply] [grind!
+    .] for pattern: [@natDegree #3 #2 (@HMul.hMul (Polynomial _ _) (Polynomial _ _) (Polynomial _ _) _ #1 #0)]
+info: vendor/ArkLib/Data/Polynomial/Bivariate.lean:55:17: Try these:
+  [apply] [grind =] for pattern: [@degree #2 #1 #0, @Bot.bot `[WithBot ℕ] `[WithBot.bot]]
+  [apply] [grind .] for pattern: [@degree #2 #1 #0]
+info: vendor/ArkLib/Data/Polynomial/Bivariate.lean:55:17: Try these:
+  [apply] [grind .] for pattern: [@LT.lt _ _ (@Bot.bot _ _) (@WithBot.some #2 #0)]
+  [apply] [grind! .] for pattern: [@WithBot.some #2 #0]
+info: vendor/ArkLib/Data/Polynomial/Bivariate.lean:55:17: Try this:
+  [apply] [grind =] for pattern: [@IsMaxOn #5 #4 #3 #2 #1 #0]
+info: vendor/ArkLib/Data/Polynomial/Bivariate.lean:55:17: Try these:
+  [apply] [grind .] for pattern: [@Finset.sup #7 #8 #6 #5 #3 #4, @Membership.mem _ (Finset _) _ #3 #2]
+  [apply] [grind
+    →] for pattern: [@Membership.mem #8 (Finset _) _ #3 #2, @IsMaxOn _ #7 _ #4 (@SetLike.coe (Finset _) _ _ #3) #2]
+  [apply] [grind <=] for pattern: [@Finset.sup #7 #8 #6 #5 #3 #4, @IsMaxOn _ _ _ #4 (@SetLike.coe (Finset _) _ _ #3) #2]
+info: vendor/ArkLib/Data/Polynomial/Bivariate.lean:55:17: Try this:
+  [apply] [grind
+    =] for pattern: [@DFunLike.coe (@LinearMap #5 _ #4 _ _ _ (Polynomial _ _) _ _ _ _) _ _ _ (@Polynomial.monomial _ _ #3) #1, @DFunLike.coe (@LinearMap _ _ _ _ _ _ (Polynomial _ _) _ _ _ _) _ _ _ (@Polynomial.monomial _ _ #2) #0]
+✔ [8994/9093] Built PolyFun.PFunctor.Basic (6.7s)
+✔ [8995/9093] Built ToMathlib.Data.Vector.Count (7.1s)
+✔ [8996/9093] Built ToMathlib.MeasureTheory.Measure.Bounds (6.1s)
+✔ [8997/9093] Built VCVio.EvalDist.Defs.Measure.Core (6.3s)
+✔ [8998/9093] Built ToMathlib.MeasureTheory.Integral.Quadratic (6.2s)
+✔ [8999/9093] Built ToMathlib.MeasureTheory.Measure.Option (6.4s)
+✔ [9000/9093] Built Cslib.Foundations.Control.Monad.IsMonadHom (3.7s)
+✔ [9001/9093] Built PolyFun.Control.Monad.Support.Instances (2.9s)
+⚠ [9002/9093] Built ArkLib.Data.MvPolynomial.Interpolation (4.5s)
+warning: vendor/ArkLib/Data/MvPolynomial/Interpolation.lean:250:14: declaration uses `sorry`
+✔ [9003/9093] Built ArkLib.Data.CodingTheory.Basic.Distance (7.2s)
+✔ [9004/9093] Built ArkLib.Data.Polynomial.Interface (5.1s)
+✔ [9005/9093] Built PolyFun.PFunctor.Handler (4.0s)
+✔ [9006/9093] Built VCVio.OracleComp.OracleSpec (5.3s)
+ℹ [9007/9093] Built CprsFormal.Rbr (15s)
+info: CprsFormal/Rbr.lean:113:0: 'Cprs.rbr_prob' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9008/9093] Built PolyFun.Control.Monad.Hom.IsMonadHom (4.8s)
+⚠ [9009/9093] Built CprsFormal.Packing (15s)
+warning: CprsFormal/Packing.lean:86:69: Variable name `hd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: CprsFormal/Packing.lean:158:0: 'Cprs.Packing.conjugate_identity_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Packing.lean:159:0: 'Cprs.Packing.conjugate_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9010/9093] Built ToCslib.Control.Monad.HomTransport (4.0s)
+✔ [9011/9093] Built ArkLib.Data.CodingTheory.PolishchukSpielman.Degrees (6.1s)
+✔ [9012/9093] Built VCVio.EvalDist.Defs.Support (4.9s)
+✔ [9013/9093] Built VCVio.EvalDist.Defs.Measure.Failure (5.6s)
+✔ [9014/9093] Built Cslib.Foundations.Data.PFunctor.Free (5.4s)
+✔ [9015/9093] Built Cslib.Foundations.Control.Monad.IsMonadHom.List (5.4s)
+✔ [9016/9093] Built ToMathlib.Data.Vector.ListVector (6.4s)
+✔ [9017/9093] Built VCVio.EvalDist.ProbabilityNotation (6.3s)
+✔ [9018/9093] Built PolyFun.PFunctor.Equiv.Basic (6.8s)
+✔ [9019/9093] Built ArkLib.Data.Polynomial.Trivariate (7.3s)
+✔ [9020/9093] Built PolyFun.PFunctor.Handler.Instrumentation (3.3s)
+✔ [9021/9093] Built ArkLib.Data.MvPolynomial.Multilinear (6.7s)
+✔ [9022/9093] Built VCVio.OracleComp.OracleQuery (3.6s)
+✔ [9023/9093] Built VCVio.EvalDist.Defs.Support.Failure (3.5s)
+✔ [9024/9093] Built PolyFun.Control.Monad.Hom.Loops (3.5s)
+✔ [9025/9093] Built ArkLib.Data.CodingTheory.Basic.RelativeDistance (7.2s)
+✔ [9026/9093] Built ToCslib.Data.PFunctor.Free.Basic (3.8s)
+ℹ [9027/9093] Built CprsFormal.Bits (19s)
+info: CprsFormal/Bits.lean:1003:0: 'Cprs.Bits.P1_epsMax_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1004:0: 'Cprs.Bits.P1_epsMax_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1005:0: 'Cprs.Bits.P1_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1006:0: 'Cprs.Bits.P1_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1007:0: 'Cprs.Bits.P1_q244_b0_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1008:0: 'Cprs.Bits.P1_q196_b20_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1009:0: 'Cprs.Bits.P1_workRatio_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1010:0: 'Cprs.Bits.P1_workRatio_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1011:0: 'Cprs.Bits.P1_atBudget_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1012:0: 'Cprs.Bits.P1_atBudget_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1013:0: 'Cprs.Bits.P1_q243_b0_fails_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1014:0: 'Cprs.Bits.P1_q195_b20_fails_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1015:0: 'Cprs.Bits.P1_workRatio_iff_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1016:0: 'Cprs.Bits.P1_workRatio_iff_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1017:0: 'Cprs.Bits.P1_Bp_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1018:0: 'Cprs.Bits.P1_Bp_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1019:0: 'Cprs.Bits.P1_Bp_workRatio_iff_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1020:0: 'Cprs.Bits.P1_Bp_workRatio_iff_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1021:0: 'Cprs.Bits.P2_epsMax_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1022:0: 'Cprs.Bits.P2_epsMax_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1023:0: 'Cprs.Bits.P2_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1024:0: 'Cprs.Bits.P2_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1025:0: 'Cprs.Bits.P2_q244_b0_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1026:0: 'Cprs.Bits.P2_q196_b20_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1027:0: 'Cprs.Bits.P2_workRatio_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1028:0: 'Cprs.Bits.P2_workRatio_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1029:0: 'Cprs.Bits.P2_atBudget_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1030:0: 'Cprs.Bits.P2_atBudget_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1031:0: 'Cprs.Bits.P2_q243_b0_fails_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1032:0: 'Cprs.Bits.P2_q195_b20_fails_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1033:0: 'Cprs.Bits.P2_workRatio_iff_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1034:0: 'Cprs.Bits.P2_workRatio_iff_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1035:0: 'Cprs.Bits.P2_Bp_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1036:0: 'Cprs.Bits.P2_Bp_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1037:0: 'Cprs.Bits.P2_Bp_workRatio_iff_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1038:0: 'Cprs.Bits.P2_Bp_workRatio_iff_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1039:0: 'Cprs.Bits.P3_epsMax_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1040:0: 'Cprs.Bits.P3_epsMax_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1041:0: 'Cprs.Bits.P3_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1042:0: 'Cprs.Bits.P3_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1043:0: 'Cprs.Bits.P3_q244_b0_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1044:0: 'Cprs.Bits.P3_q196_b20_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1045:0: 'Cprs.Bits.P3_workRatio_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1046:0: 'Cprs.Bits.P3_workRatio_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1047:0: 'Cprs.Bits.P3_atBudget_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1048:0: 'Cprs.Bits.P3_atBudget_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1049:0: 'Cprs.Bits.P3_q243_b0_fails_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1050:0: 'Cprs.Bits.P3_q195_b20_fails_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1051:0: 'Cprs.Bits.P3_workRatio_iff_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1052:0: 'Cprs.Bits.P3_workRatio_iff_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1053:0: 'Cprs.Bits.P3_Bp_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1054:0: 'Cprs.Bits.P3_Bp_q196_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1055:0: 'Cprs.Bits.P3_Bp_workRatio_iff_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1056:0: 'Cprs.Bits.P3_Bp_workRatio_iff_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1057:0: 'Cprs.Bits.P4_Bp_fails_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1058:0: 'Cprs.Bits.P4_Bp_not_workRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1059:0: 'Cprs.Bits.P4_Bp_shortfall' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1060:0: 'Cprs.Bits.P4_B_fails_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1061:0: 'Cprs.Bits.P4_epsMax_Bp_q244_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1062:0: 'Cprs.Bits.P4_Bp_q244_b0_from_R_plus_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1063:0: 'Cprs.Bits.P4_Bp_q196_b20_from_R_plus_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1064:0: 'Cprs.Bits.P4_Bp_atBudget_q241' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1065:0: 'Cprs.Bits.P4_Bp_atBudget_q193_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1066:0: 'Cprs.Bits.P5_Bp_workRatio_iff_b0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1067:0: 'Cprs.Bits.P5_Bp_workRatio_iff_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1068:0: 'Cprs.Bits.P5_B_fails_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1069:0: 'Cprs.Bits.pM31_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1070:0: 'Cprs.Bits.Ksz_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1071:0: 'Cprs.Bits.r1_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1072:0: 'Cprs.Bits.one_lt_r1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1073:0: 'Cprs.Bits.r1_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1074:0: 'Cprs.Bits.Ksz_lt_two_pow_124' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1075:0: 'Cprs.Bits.Ksz_lt_r1_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1076:0: 'Cprs.Bits.betaUD_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1077:0: 'Cprs.Bits.P1_hashC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1078:0: 'Cprs.Bits.P2_hashC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1079:0: 'Cprs.Bits.P3_hashC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1080:0: 'Cprs.Bits.P4_hashC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1081:0: 'Cprs.Bits.P5_hashC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1082:0: 'Cprs.Bits.Profile.R_eq' depends on axioms: [propext, Quot.sound]
+info: CprsFormal/Bits.lean:1083:0: 'Cprs.Bits.spot_P1_244_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1084:0: 'Cprs.Bits.spot_P1_243_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1085:0: 'Cprs.Bits.spot_P1_244_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1086:0: 'Cprs.Bits.spot_P1_196_at_R_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1087:0: 'Cprs.Bits.spot_P1_195_at_R_b20' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1088:0: 'Cprs.Bits.spot_P3_244_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1089:0: 'Cprs.Bits.spot_P3_243_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1090:0: 'Cprs.Bits.spot_P4_Bp_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1091:0: 'Cprs.Bits.spot_P4_Bp_at_R_plus_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1092:0: 'Cprs.Bits.spot_P4_B_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1093:0: 'Cprs.Bits.spot_P4_Bp_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1094:0: 'Cprs.Bits.spot_P5_Bp_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1095:0: 'Cprs.Bits.spot_P5_B_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1096:0: 'Cprs.Bits.hashStar_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1097:0: 'Cprs.Bits.fsBound_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1098:0: 'Cprs.Bits.fsBound_le_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1099:0: 'Cprs.Bits.workRatio_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1100:0: 'Cprs.Bits.workRatio100_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1101:0: 'Cprs.Bits.fsBound_atBudget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1102:0: 'Cprs.Bits.not_le_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1103:0: 'Cprs.Bits.not_le_at_R_of_query' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1104:0: 'Cprs.Bits.not_workRatio100_of_fail_at_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1105:0: 'Cprs.Bits.workRatio100_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1106:0: 'Cprs.Bits.cert_of_numerics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1107:0: 'Cprs.Bits.P1_cert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1108:0: 'Cprs.Bits.P2_cert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1109:0: 'Cprs.Bits.P3_cert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1110:0: 'Cprs.Bits.P1_Bp_cert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1111:0: 'Cprs.Bits.P2_Bp_cert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1112:0: 'Cprs.Bits.P3_Bp_cert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1113:0: 'Cprs.Bits.P5_Bp_cert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bits.lean:1114:0: 'Cprs.Bits.P1_depths' does not depend on any axioms
+info: CprsFormal/Bits.lean:1115:0: 'Cprs.Bits.P4_depths' does not depend on any axioms
+✔ [9028/9093] Built VCVio.EvalDist.Defs.Measure.OptionT (4.3s)
+✔ [9029/9093] Built VCVio.Prelude.Core (3.9s)
+✔ [9030/9093] Built VCVio.EvalDist.Monad.Seq.Measure (4.2s)
+✔ [9031/9093] Built VCVio.OracleComp.HasQuery.Basic (2.8s)
+✔ [9032/9093] Built ArkLib.Data.CodingTheory.PolishchukSpielman.Resultant (6.0s)
+✔ [9033/9093] Built ArkLib.Data.MvPolynomial.LinearMvExtension (4.1s)
+✔ [9034/9093] Built PolyFun.PFunctor.Lens.Basic (5.0s)
+✔ [9035/9093] Built VCVio.EvalDist.Monad.Seq.Uniform (2.4s)
+✔ [9036/9093] Built ArkLib.Data.CodingTheory.Basic.DecodingRadius (3.6s)
+✔ [9037/9093] Built VCVio.EvalDist.Monad.Support (3.1s)
+✔ [9038/9093] Built PolyFun.PFunctor.Free.Basic (1.9s)
+✔ [9039/9093] Built ArkLib.Data.CodingTheory.PolishchukSpielman.Existence (3.8s)
+✔ [9040/9093] Built VCVio.EvalDist.Monad.Measure (3.0s)
+✔ [9041/9093] Built VCVio.EvalDist.ProbabilityBounds (3.5s)
+✔ [9042/9093] Built VCVio.OracleComp.OracleComp (3.1s)
+✔ [9043/9093] Built PolyFun.PFunctor.Free.Displayed (3.4s)
+✔ [9044/9093] Built ArkLib.Data.CodingTheory.PolishchukSpielman.PolishchukSpielman (2.7s)
+✔ [9045/9093] Built VCVio.EvalDist.PFunctorMeasure.Core (3.6s)
+✔ [9046/9093] Built ArkLib.Data.CodingTheory.Basic.LinearCode (5.7s)
+✔ [9047/9093] Built VCVio.EvalDist.Monad.Option (2.2s)
+✔ [9048/9093] Built VCVio.OracleComp.SimSemantics.QueryImpl.Basic (2.4s)
+✔ [9049/9093] Built ArkLib.Data.CodingTheory.PolishchukSpielman (2.9s)
+✔ [9050/9093] Built VCVio.OracleComp.EvalDist.MeasureSpec (3.5s)
+✔ [9051/9093] Built ArkLib.Data.Matrix.Vandermonde (3.3s)
+✔ [9052/9093] Built VCVio.OracleComp.SimSemantics.SimulateQ (2.6s)
+✔ [9053/9093] Built PolyFun.PFunctor.Free.Path (4.7s)
+✔ [9054/9093] Built ArkLib.Data.CodingTheory.BerlekampWelch.ElocPoly (4.7s)
+✔ [9055/9093] Built ArkLib.Data.CodingTheory.InterleavedCode (5.1s)
+✔ [9056/9093] Built PolyFun.PFunctor.Free.Support (1.9s)
+✔ [9057/9093] Built ArkLib.Data.CodingTheory.ReedSolomon (3.8s)
+✔ [9058/9093] Built VCVio.OracleComp.Support (1.8s)
+✔ [9059/9093] Built ArkLib.Data.CodingTheory.BerlekampWelch.Condition (4.3s)
+✔ [9060/9093] Built VCVio.OracleComp.EvalDist.Measure (2.9s)
+✔ [9061/9093] Built VCVio.OracleComp.ProbComp.Basic (3.2s)
+✔ [9062/9093] Built ArkLib.Data.CodingTheory.BerlekampWelch.Existence (3.0s)
+✔ [9063/9093] Built VCVio.OracleComp.Constructions.UniformFinMeasure (2.1s)
+✔ [9064/9093] Built ArkLib.Data.CodingTheory.BerlekampWelch.BerlekampWelch (3.0s)
+✔ [9065/9093] Built VCVio.OracleComp.Constructions.SampleableType.Basic (2.9s)
+✔ [9066/9093] Built VCVio.OracleComp.Constructions.SampleableType.NativeMeasure (2.9s)
+✔ [9067/9093] Built ArkLib.Data.Probability.Uniform (2.2s)
+✔ [9068/9093] Built ArkLib.Data.CodingTheory.ProximityGap.Basic (3.9s)
+✔ [9069/9093] Built ArkLib.Data.MvPolynomial.SchwartzZippelCounting (5.0s)
+✔ [9070/9093] Built ArkLib.Data.Probability.Instances (2.0s)
+✔ [9071/9093] Built ArkLib.Data.CodingTheory.ProximityGap.BCIKS20.Prelude (2.6s)
+✔ [9072/9093] Built ArkLib.Data.CodingTheory.ProximityGap.BCIKS20.ErrorBound (4.2s)
+✔ [9073/9093] Built ArkLib.Data.CodingTheory.ProximityGap.BCIKS20.AffineLines.BWMatrix (4.8s)
+✔ [9074/9093] Built ArkLib.Data.CodingTheory.ProximityGap.BCIKS20.AffineLines.GoodCoeffs (5.7s)
+✔ [9075/9093] Built ArkLib.Data.CodingTheory.ProximityGap.BCIKS20.AffineLines.JointAgreement (5.9s)
+✔ [9076/9093] Built ArkLib.Data.CodingTheory.ProximityGap.BCIKS20.AffineLines.UniqueDecoding (2.6s)
+ℹ [9077/9093] Built CprsFormal.L1 (6.9s)
+info: CprsFormal/L1.lean:173:0: 'Cprs.corrAgree_of_arklib' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9078/9093] Built CprsFormal.FoldStep (17s)
+info: CprsFormal/FoldStep.lean:258:0: 'Cprs.lemmaF'' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9079/9093] Built CprsFormal.PhaseA (7.0s)
+info: CprsFormal/PhaseA.lean:270:0: 'Cprs.gamma_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/PhaseA.lean:271:0: 'Cprs.sumcheck_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/PhaseA.lean:272:0: 'Cprs.mle_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/PhaseA.lean:273:0: 'Cprs.mu_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9080/9093] Built CprsFormal.PhaseB (9.6s)
+info: CprsFormal/PhaseB.lean:588:0: 'Cprs.PhaseBInst.state_weight_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/PhaseB.lean:589:0: 'Cprs.PhaseBInst.good_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: CprsFormal/PhaseB.lean:605:60: Variable name `m` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _m
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: CprsFormal/PhaseB.lean:684:0: 'Cprs.PhaseBInst.weight_eq_chk_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/PhaseB.lean:685:0: 'Cprs.PhaseBInst.final_mass_eq_chk_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/PhaseB.lean:686:0: 'Cprs.PhaseBInst.final_mass_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/PhaseB.lean:892:0: 'Cprs.PhaseBInst.soundness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/PhaseB.lean:893:0: 'Cprs.PhaseBInst.soundness_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9081/9093] Built CprsFormal.Layers (7.9s)
+info: CprsFormal/Layers.lean:185:0: 'Cprs.layerDomain_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Layers.lean:186:0: 'Cprs.layerDomain_sqLayer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Layers.lean:187:0: 'Cprs.PhaseBInst.ofRoot_wf' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9082/9093] Built CprsFormal.CompAlg (7.9s)
+warning: CprsFormal/CompAlg.lean:29:0: automatically included section variable(s) unused in theorem `Cprs.Complete.evenP_coeff`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/CompAlg.lean:33:0: automatically included section variable(s) unused in theorem `Cprs.Complete.oddP_coeff`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/CompAlg.lean:52:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompAlg.lean:52:6: Unused tactic linter: `simpa [eval_add, eval_mul, expand_eval] using h` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompAlg.lean:79:0: automatically included section variable(s) unused in theorem `Cprs.Complete.eval_foldPoly`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/CompAlg.lean:97:0: automatically included section variable(s) unused in theorem `Cprs.Complete.mle_nil`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/CompAlg.lean:100:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompAlg.lean:100:6: Unused tactic linter: `simp [mle, mleAux]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompAlg.lean:102:0: automatically included section variable(s) unused in theorem `Cprs.Complete.mleAux_zero`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/CompAlg.lean:149:0: automatically included section variable(s) unused in theorem `Cprs.Complete.Pt_snoc`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/CompAlg.lean:153:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompAlg.lean:152:53: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompAlg.lean:153:6: Unused tactic linter: `(rw [Pt, Fin.init_snoc, Fin.snoc_last])` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompAlg.lean:155:0: automatically included section variable(s) unused in theorem `Cprs.Complete.Et_snoc`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/CompAlg.lean:159:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompAlg.lean:158:53: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompAlg.lean:159:6: Unused tactic linter: `(rw [Et, Fin.init_snoc, Fin.snoc_last])` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompAlg.lean:171:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompAlg.lean:185:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompAlg.lean:171:10: Unused tactic linter: `simp only [Pt]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompAlg.lean:185:10: Unused tactic linter: `simp only [Pt]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompAlg.lean:190:0: automatically included section variable(s) unused in theorem `Cprs.Complete.eval_const_of_mem`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/CompAlg.lean:207:0: automatically included section variable(s) unused in theorem `Cprs.Complete.gPoly_eval`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/CompAlg.lean:212:0: automatically included section variable(s) unused in theorem `Cprs.Complete.gPoly_natDegree`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/CompAlg.lean:224:0: automatically included section variable(s) unused in theorem `Cprs.Complete.wagree_eq_one`:
+  [Field K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9083/9093] Built CprsFormal.ChainDefs (8.5s)
+⚠ [9084/9093] Built CprsFormal.CompInv (8.0s)
+warning: CprsFormal/CompInv.lean:20:14: Variable name `t` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _t
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: CprsFormal/CompInv.lean:20:16: Variable name `pre` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _pre
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: CprsFormal/CompInv.lean:53:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompInv.lean:57:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompInv.lean:60:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompInv.lean:68:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompInv.lean:72:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompInv.lean:76:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/CompInv.lean:53:8: Unused tactic linter: `simp [PhaseBInst.state]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompInv.lean:57:8: Unused tactic linter: `(rw [e0]; exact True.intro)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompInv.lean:60:8: Unused tactic linter: `(rw [e0]; rfl)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompInv.lean:68:8: Unused tactic linter: `(rw [e0]; exact hpi y hy)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompInv.lean:72:8: Unused tactic linter: `(rw [e0]; rfl)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompInv.lean:76:8: Unused tactic linter: `(rw [e0]; exact True.intro)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/CompInv.lean:125:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: CprsFormal/CompInv.lean:196:15: `if_pos` has been deprecated: Use `ite_eq_left` instead
+⚠ [9085/9093] Built CprsFormal.ToyFalse (9.6s)
+warning: CprsFormal/ToyFalse.lean:22:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/ToyFalse.lean:22:6: Unused tactic linter: `exact orderOf_eq_prime_pow (p := 2) (n := 1) (by decide) (by decide)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/ToyFalse.lean:37:0: automatically included section variable(s) unused in theorem `Cprs.Toy.wagree_one`:
+  [Field K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/ToyFalse.lean:43:0: automatically included section variable(s) unused in theorem `Cprs.Toy.mleAux_zero`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: CprsFormal/ToyFalse.lean:53:0: automatically included section variable(s) unused in theorem `Cprs.Toy.poly_zero_of_many_roots`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: CprsFormal/ToyFalse.lean:127:0: 'Cprs.Toy.nonvacuity_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/ToyFalse.lean:128:0: 'Cprs.Toy.soundness_hypotheses_satisfiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9086/9093] Built CprsFormal.Bridge (8.6s)
+info: CprsFormal/Bridge.lean:350:0: 'Cprs.mle_eq_mleTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bridge.lean:351:0: 'Cprs.exists_poly_of_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bridge.lean:352:0: 'Cprs.coordDeg_mleTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bridge.lean:353:0: 'Cprs.coordDeg_chainF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bridge.lean:354:0: 'Cprs.sum_bool_chainF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Bridge.lean:355:0: 'Cprs.mleTable_boolPt' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9087/9093] Built CprsFormal.SumCheck (8.6s)
+info: CprsFormal/SumCheck.lean:261:0: 'Cprs.aux_sumcheck_pt_no_junk' depends on axioms: [propext, Quot.sound]
+info: CprsFormal/SumCheck.lean:262:0: 'Cprs.aux_sumcheck_snoc_val' depends on axioms: [propext, Quot.sound]
+info: CprsFormal/SumCheck.lean:263:0: 'Cprs.aux_sumcheck_pt_cons' depends on axioms: [propext, Quot.sound]
+info: CprsFormal/SumCheck.lean:264:0: 'Cprs.aux_sumcheck_S_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/SumCheck.lean:265:0: 'Cprs.aux_sumcheck_S_zero_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/SumCheck.lean:266:0: 'Cprs.aux_sumcheck_S_zero_pre' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/SumCheck.lean:267:0: 'Cprs.aux_sumcheck_pt_update' depends on axioms: [propext, Quot.sound]
+info: CprsFormal/SumCheck.lean:268:0: 'Cprs.aux_sumcheck_poly' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/SumCheck.lean:269:0: 'Cprs.aux_sumcheck_honest' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/SumCheck.lean:270:0: 'Cprs.aux_sumcheck_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/SumCheck.lean:271:0: 'Cprs.sumcheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9088/9093] Built CprsFormal.Complete (9.1s)
+warning: CprsFormal/Complete.lean:108:29: This simp argument is unused:
+  Fintype.card_fun
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fintype.card_prod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: CprsFormal/Complete.lean:112:0: 'Cprs.PhaseBInst.completeness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Complete.lean:113:0: 'Cprs.PhaseBInst.rel_init' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Complete.lean:114:0: 'Cprs.PhaseBInst.honest_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Complete.lean:115:0: 'Cprs.PhaseBInst.honest_final_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/Complete.lean:116:0: 'Cprs.PhaseBInst.honest_accept_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9089/9093] Built CprsFormal.ToyTrue (5.9s)
+info: CprsFormal/ToyTrue.lean:61:0: 'Cprs.Toy.nonvacuity_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CprsFormal/ToyTrue.lean:62:0: 'Cprs.Toy.toy_honest_accept_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9090/9093] Built CprsFormal.Chain (11s)
+warning: CprsFormal/Chain.lean:49:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: CprsFormal/Chain.lean:56:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: CprsFormal/Chain.lean:142:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: CprsFormal/Chain.lean:142:19: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: CprsFormal/Chain.lean:160:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:161:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:160:6: Unused tactic linter: `field_simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:161:6: Unused tactic linter: `(
+  simp only [div_eq_mul_inv]
+  linear_combination (-(n1 * cX2 * cX3 * cΩ)) * (mul_inv_cancel₀ hκ0))` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:271:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:272:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:271:6: Unused tactic linter: `(simp [finProdFinEquiv]; ring)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:272:6: Unused tactic linter: `(simp [finProdFinEquiv]; omega)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:289:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:289:8: Unused tactic linter: `simpa [yf, ysf] using h1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:338:16: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:338:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:338:16: Unused tactic linter: `(simp only [claim0, ystar])` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:338:46: Unused tactic linter: `(unfold claim0 ystar; rfl)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:377:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: CprsFormal/Chain.lean:424:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: CprsFormal/Chain.lean:453:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: CprsFormal/Chain.lean:429:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:446:42: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:446:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:468:40: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:468:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:429:65: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:446:42: Unused tactic linter: `exact Fin.cons_zero` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:446:64: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:468:40: Unused tactic linter: `exact Fin.cons_zero` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:468:62: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:486:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:486:8: Unused tactic linter: `field_simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:521:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:521:6: Unused tactic linter: `(convert (div_le_iff₀ hpos).mp h using 2)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:549:13: Variable name `hd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: CprsFormal/Chain.lean:550:21: Variable name `hσ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hσ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: CprsFormal/Chain.lean:600:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:710:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:711:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: CprsFormal/Chain.lean:599:15: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:600:8: Unused tactic linter: `(simp; ring)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:709:58: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:710:12: Unused tactic linter: `(simp only [Fintype.card_prod, Nat.cast_mul]; ring)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: CprsFormal/Chain.lean:711:12: Unused tactic linter: `(simp [Fintype.card_prod]; ring)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: CprsFormal/Chain.lean:745:0: 'Cprs.Chain.chain_soundness' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9091/9093] Built CprsFormal.ChainMoore (5.7s)
+info: CprsFormal/ChainMoore.lean:57:0: 'Cprs.Chain.chain_soundness_moore' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9092/9093] Built CprsFormal (5.3s)
+Build completed successfully (9093 jobs).
+== 3/4 axiom gate
+CPRS axiom sweep: 624 theorems under `Cprs`; with non-standard axioms: []
+'Cprs.Chain.chain_soundness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.Chain.chain_soundness_moore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProximityGap.RS_jointAgreement_of_goodCoeffs_card_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.corrAgree_of_arklib' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.lemmaW'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.lemmaC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.lemmaF'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.rbr_prob' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.PhaseBInst.good_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.PhaseBInst.soundness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.PhaseBInst.soundness_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.Packing.conjugate_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.gamma_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.sumcheck_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.mu_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cprs.PhaseBInst.ofRoot_wf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ok: 624 theorems swept
+== 4/4 summary
+PASS: CPRS Lean development builds; no sorry/axiom beyond [propext, Classical.choice, Quot.sound].

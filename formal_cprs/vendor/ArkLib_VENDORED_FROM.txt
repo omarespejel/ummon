@@ -1,0 +1,3 @@
+Vendored (unmodified) from https://github.com/Verified-zkEVM/ArkLib at commit ace55c3e29da1fc55a321378ada55ea4f7ed8790
+License: Apache-2.0 (see ArkLib_LICENSE). Only the import closure of
+ArkLib.Data.CodingTheory.ProximityGap.BCIKS20.AffineLines.{UniqueDecoding,JointAgreement} is included (39 modules).

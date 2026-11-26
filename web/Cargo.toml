@@ -1,0 +1,28 @@
+[package]
+name = "ummon-web-verifier"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Thin wasm32 wrapper over ummon-verifier: checks a multi-token STWOMDL2 bundle held in memory"
+publish = false
+
+# Own workspace: this crate is not a member of the repository root package.
+[workspace]
+
+[lib]
+name = "ummon_web_verifier"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+ummon-verifier = { path = "../verifier" }
+
+# Same release settings as the verifier crate.
+[profile.release]
+lto = true
+codegen-units = 1
+
+# The release build with integer overflow checks on, to show the verify path does not overflow on 32-bit usize.
+[profile.release-checked]
+inherits = "release"
+overflow-checks = true

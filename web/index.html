@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'unsafe-inline'; connect-src 'self'">
+<title>Ummon verifier</title>
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; max-width: 52rem; margin: 2rem auto; padding: 0 1rem; color: #111; background: #fff; }
+  textarea, pre { font: 13px/1.4 ui-monospace, monospace; width: 100%; box-sizing: border-box; }
+  textarea { height: 8.5rem; }
+  pre { white-space: pre-wrap; word-break: break-all; background: #f4f4f4; padding: .75rem; }
+  #verdict { font-size: 1.4rem; font-weight: 600; }
+  .accept { color: #0a6b2d; } .reject { color: #a11; }
+  label { display: block; margin: 1rem 0 .25rem; font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>Ummon verifier</h1>
+<p>Checks a proof bundle on this machine with the verifier compiled to WebAssembly. Nothing is sent anywhere.</p>
+
+<label for="files">Bundle files (the manifest <code>model_manifest.mdl2</code> and the receipts it names)</label>
+<input id="files" type="file" multiple>
+
+<label for="statement">Statement to check</label>
+<textarea id="statement" spellcheck="false">model_anchor 5f1141e860a60512243a9e0848ee0bea9b9d5b7f03196ae1e1f59b2ba01f1f68
+initial_chain 0:2424242424242424242424242424242424242424242424242424242424242424
+tokens 200000,64,2752,16980,341,7550,2895,290,30404,75041,436,290,113841,262,6060,38794
+gen_tokens 436,1085,4635,323,12824,1648,290,1453,26,589,30404,948,19560,75041,436,290
+profile production_hardened</textarea>
+
+<p><button id="run" disabled>Verify</button> <span id="status">Loading the verifier…</span></p>
+<p id="verdict"></p>
+<pre id="report" hidden></pre>
+
+<script type="module" src="page.js"></script>
+</body>
+</html>

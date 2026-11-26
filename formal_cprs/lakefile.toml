@@ -1,0 +1,95 @@
+name = "cprs_formal"
+version = "0.1.0"
+license = "Apache-2.0"
+keywords = ["math", "cryptography", "stark", "reed-solomon"]
+defaultTargets = ["CprsFormal"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+relaxedAutoImplicit = false
+
+# Every dependency is pinned by full commit hash and listed here (flattened), so that the revisions that
+# `lake` resolves are exactly the ones this development was built and checked with (Lean v4.34.0,
+# Mathlib v4.34.0).  The set and the revisions are those of ArkLib commit
+# ace55c3e29da1fc55a321378ada55ea4f7ed8790, whose unique-decoding correlated-agreement theorem (BCIKS20 Thm 4.1)
+# is the only external result used; the needed import closure of ArkLib is vendored unmodified in `vendor/`.
+# Mathlib's binary cache must match the Mathlib revision: run `lake exe cache get` before the first build.
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "5ed2965256430c3649e86755f9576b54eca72435"
+
+[[require]]
+name = "batteries"
+git = "https://github.com/leanprover-community/batteries"
+rev = "f2effa3d803fda822b1f97b806c47cf2adfbcbc2"
+
+[[require]]
+name = "Qq"
+git = "https://github.com/leanprover-community/quote4"
+rev = "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259"
+
+[[require]]
+name = "aesop"
+git = "https://github.com/leanprover-community/aesop"
+rev = "355695d523e41d0554926416cba2a2b3544fbbc9"
+
+[[require]]
+name = "proofwidgets"
+git = "https://github.com/leanprover-community/ProofWidgets4"
+rev = "106ff4fafc74ef4ac99d81dbf3ab399118f497a5"
+
+[[require]]
+name = "plausible"
+git = "https://github.com/leanprover-community/plausible"
+rev = "118aa17ee84656b8bd727fef7c458ee8c833385c"
+
+[[require]]
+name = "LeanSearchClient"
+git = "https://github.com/leanprover-community/LeanSearchClient"
+rev = "ddf04cf3949fa556442341e87d47f9f6e6074707"
+
+[[require]]
+name = "importGraph"
+git = "https://github.com/leanprover-community/import-graph"
+rev = "e928b72544873815af278d38681b31c0293588e3"
+
+[[require]]
+name = "Cli"
+git = "https://github.com/leanprover/lean4-cli"
+rev = "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+
+[[require]]
+name = "cslib"
+git = "https://github.com/leanprover/cslib"
+rev = "990e65a685bed413f43b139db900a36ad5322a10"
+
+[[require]]
+name = "PolyFun"
+git = "https://github.com/Verified-zkEVM/PolyFun"
+rev = "3710d71b28404a151b8d1f0ce080ea448778dec0"
+
+[[require]]
+name = "CompPoly"
+git = "https://github.com/Verified-zkEVM/CompPoly"
+rev = "df591bb8c6745126d1d72f5243faae3022b0432a"
+
+[[require]]
+name = "VCVio"
+git = "https://github.com/Verified-zkEVM/VCVio"
+rev = "d7089e46d69e07640fa23b5ae6b1b966f1d4b949"
+
+# Vendored, unmodified: github.com/Verified-zkEVM/ArkLib @ ace55c3e (Apache-2.0), see vendor/ArkLib_VENDORED_FROM.txt
+[[lean_lib]]
+name = "ArkLib"
+srcDir = "vendor"
+[lean_lib.leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+weak.linter.mathlibStandardSet = true
+weak.linter.style.longFile = 1500
+weak.linter.style.header = false
+
+[[lean_lib]]
+name = "CprsFormal"

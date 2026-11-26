@@ -1,0 +1,7 @@
+# The stwo dependency, put here by get_stwo.sh; build outputs; the proofs, downloaded here (README section 3);
+# the plots the figure scripts write (README section 7).
+/stwo/
+target/
+/proofs/
+/ummon-proofs-v1.tar
+/paper/figures/*.svg

@@ -1,0 +1,4 @@
+$ curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /work/elan-init.sh && sha256sum /work/elan-init.sh && sh /work/elan-init.sh -y --default-toolchain none
+(exit 0, 1.3 s)
+a620ff1641616222c8d37c54845492004bb84d6877cdbc944dd65c1aa685bf53  /work/elan-init.sh
+info: downloading installer

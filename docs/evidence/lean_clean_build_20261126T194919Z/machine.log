@@ -1,0 +1,8 @@
+$ nproc; free -g; df -h /work /root; uname -a
+(exit 0, 0.0 s)
+16
+Filesystem      Size  Used Avail Use% Mounted on
+none            512G  5.4M  512G   1% /
+none            512G  5.4M  512G   1% /
+Linux modal 4.19.0-gvisor #1 SMP Sun Jan 10 15:06:54 PST 2016 x86_64 GNU/Linux
+bash: line 1: free: command not found
